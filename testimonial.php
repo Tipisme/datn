@@ -23,7 +23,7 @@ if (isset($_GET['action']) && $_GET['action'] == "logout") {
 
 <head>
     <meta charset="utf-8">
-    <title>JobEntry - Job Portal Website Template</title>
+    <title>DATN-NGUYỄN VĂN TÙNG</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -67,12 +67,12 @@ if (isset($_GET['action']) && $_GET['action'] == "logout") {
         <!-- Header End -->
         <div class="container-xxl py-5 bg-dark page-header mb-5">
             <div class="container my-5 pt-5 pb-4">
-                <h1 class="display-3 text-white mb-3 animated slideInDown">Testimonial</h1>
+                <h1 class="display-3 text-white mb-3 animated slideInDown">Phản hồi</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb text-uppercase">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">Testimonial</li>
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="#">Trang</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Quảng cáo</li>
                     </ol>
                 </nav>
             </div>
@@ -83,7 +83,7 @@ if (isset($_GET['action']) && $_GET['action'] == "logout") {
         <!-- Testimonial Start -->
         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
-                <h1 class="text-center mb-5">Advertisment 🎈✨</h1>
+                <h1 class="text-center mb-5">Quảng cáo 🎈✨</h1>
                 <div class="owl-carousel testimonial-carousel">
                 <?php 
                     $showAdv = $class->showAllAdvertisment();

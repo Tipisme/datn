@@ -42,7 +42,7 @@ $mailSent = mail($recipient, $subject, $body, $headers);
 
 <head>
     <meta charset="utf-8">
-    <title>JobEntry - Job Portal Website Template</title>
+    <title>DATN-NGUYỄN VĂN TÙNG</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -91,12 +91,11 @@ $mailSent = mail($recipient, $subject, $body, $headers);
         <!-- Header End -->
         <div class="container-xxl py-5 bg-dark page-header mb-5">
             <div class="container my-5 pt-5 pb-4">
-                <h1 class="display-3 text-white mb-3 animated slideInDown">Contact</h1>
+                <h1 class="display-3 text-white mb-3 animated slideInDown">Liên hệ</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb text-uppercase">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Liên hệ</li>
                     </ol>
                 </nav>
             </div>
@@ -107,7 +106,7 @@ $mailSent = mail($recipient, $subject, $body, $headers);
         <!-- Contact Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Contact For Any Query</h1>
+                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Liên hệ nếu có bất kỳ câu hỏi nào</h1>
                 <div class="row g-4">
                     <div class="col-12">
                         <div class="row gy-4">
@@ -117,7 +116,7 @@ $mailSent = mail($recipient, $subject, $body, $headers);
                                         style="width: 45px; height: 45px;">
                                         <i class="fa fa-map-marker-alt text-primary"></i>
                                     </div>
-                                    <span>123 Street, New York, USA</span>
+                                    <span>Hà Nội, Việt Nam</span>
                                 </div>
                             </div>
                             <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
@@ -126,7 +125,7 @@ $mailSent = mail($recipient, $subject, $body, $headers);
                                         style="width: 45px; height: 45px;">
                                         <i class="fa fa-envelope-open text-primary"></i>
                                     </div>
-                                    <span>info@example.com</span>
+                                    <span>tung.nv182875@sis.hust.edu.vn</span>
                                 </div>
                             </div>
                             <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
@@ -135,14 +134,14 @@ $mailSent = mail($recipient, $subject, $body, $headers);
                                         style="width: 45px; height: 45px;">
                                         <i class="fa fa-phone-alt text-primary"></i>
                                     </div>
-                                    <span>+012 345 6789</span>
+                                    <span>0886647098</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <iframe class="position-relative rounded w-100 h-100"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Hà Nội&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                             frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="" aria-hidden="false"
                             tabindex="0"></iframe>
                     </div>

@@ -43,7 +43,7 @@ if(isset($_GET['approve'])) {
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-    <title>AdminKit Demo - Bootstrap 5 Admin Template</title>
+    <title>Admin</title>
 
     <link href="./asset/css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -60,7 +60,7 @@ if(isset($_GET['approve'])) {
             <main class="content">
                 <div class="container-fluid p-0">
 
-                    <h1 class="h3 mb-3">Job</h1>
+                    <h1 class="h3 mb-3">Việc làm</h1>
 
                     <div class="row">
                         <div class="col-12">
@@ -68,8 +68,8 @@ if(isset($_GET['approve'])) {
                             </div>
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="card-title">Job Management</h5>
-                                    <h6 class="card-subtitle text-muted">Show all job in system.
+                                    <h5 class="card-title">Quản lý việc làm</h5>
+                                    <h6 class="card-subtitle text-muted">Hiển thị tất cả việc làm.
                                 </div>
                                 <div class="card-body">
                                     <div id="datatables-multi_wrapper"
@@ -93,15 +93,15 @@ if(isset($_GET['approve'])) {
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-sort="ascending"
                                                                 aria-label="Name: activate to sort column descending">
-                                                                Serial No.</th>
+                                                                STT</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending">
-                                                                Job Title</th>
+                                                                Tiêu đề</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending">
-                                                                Address</th>
+                                                                Địa chỉ</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending">
@@ -109,24 +109,24 @@ if(isset($_GET['approve'])) {
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending">
-                                                                Category</th>
+                                                                Danh mục</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending">
-                                                                Recruiter Name</th>
+                                                                Tên nhà tuyển dụng</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending">
-                                                                Approve</th>
+                                                                Đồng ý</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending">
-                                                                Remove</th>
+                                                                Xóa</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 style="width: 46px;"
                                                                 aria-label="Office: activate to sort column ascending">
-                                                                Action</th>
+                                                                Hành động</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -183,10 +183,10 @@ if(isset($_GET['approve'])) {
                                                                         if (!empty($result['is_approve']) && $result['is_approve'] == true) {
                                                                             ?>
                                                                             <button type="button"
-                                                                                class="btn btn-outline-success">Approved</button>
+                                                                                class="btn btn-outline-success">Đã chấp thuận</button>
                                                                         <?php } else { ?>
                                                                             <button type="button"
-                                                                                class="btn btn-outline-success"><a href="?approve=<?php echo $result['id'] ?>" onclick="return confirm('Are you want to approve this job?')" style="text-decoration: none; color: #1cbb8c;">Approve</a></button>
+                                                                                class="btn btn-outline-success"><a href="?approve=<?php echo $result['id'] ?>" onclick="return confirm('Bạn có muốn chấp thuận công việc này?')" style="text-decoration: none; color: #1cbb8c;">Chấp thuận</a></button>
                                                                         <?php } ?>
                                                                     </td>
                                                                     <td>
@@ -194,10 +194,10 @@ if(isset($_GET['approve'])) {
                                                                         if (!empty($result['is_remove']) && $result['is_remove'] == true) {
                                                                             ?>
                                                                             <button type="button"
-                                                                                class="btn btn-outline-danger">Removed</button>
+                                                                                class="btn btn-outline-danger">Đã xóa</button>
                                                                         <?php } else { ?>
                                                                             <button type="button"
-                                                                                class="btn btn-outline-danger"><a href="?remove=<?php echo $result['id'] ?>" onclick="return confirm('Are you want to remove this job?')" style="text-decoration: none; color: red;">Remove</a></button>
+                                                                                class="btn btn-outline-danger"><a href="?remove=<?php echo $result['id'] ?>" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" style="text-decoration: none; color: red;">Xóa</a></button>
                                                                         <?php } ?>
                                                                     </td>
                                                                     <td class="table-action">

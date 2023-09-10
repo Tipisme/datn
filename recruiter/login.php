@@ -42,7 +42,7 @@ if(isset($_SESSION['form_data'])) {
     <!-- Style -->
     <link rel="stylesheet" href="asset-login/css/style.css">
 
-    <title>Login Recruiter</title>
+    <title>Đăng nhập</title>
 </head>
 
 <body>
@@ -55,8 +55,8 @@ if(isset($_SESSION['form_data'])) {
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-7 py-5">
-                        <h3>Login for an Recruiter account with <a href="/topcv/index.php" style="text-decoration: none;">JobPortal</a></h3>
-                        <p class="mb-4">Don't have an account yet? <a href="signup.php">Sign up now</a></p>
+                        <h3>Đăng nhập tài khoản Nhà tuyển dụng <a href="/topcv/index.php" style="text-decoration: none;"></a></h3>
+                        <p class="mb-4">Bạn vẫn chưa có tài khoản? <a href="signup.php">Đăng ký ngay</a></p>
                         </p>
                         <br>
                         <?php 
@@ -68,7 +68,7 @@ if(isset($_SESSION['form_data'])) {
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group first">
-                                        <label for="email">Email Address</label>
+                                        <label for="email">Email</label>
                                         <input type="email" class="form-control" name="email" placeholder="e.g. john@your-domain.com"
                                             id="email" value="<?php echo isset($form_data['email']) ? $form_data['email'] : ''; ?>">
                                     </div>
@@ -77,7 +77,7 @@ if(isset($_SESSION['form_data'])) {
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group first">
-                                        <label for="email">Password</label>
+                                        <label for="email">Mật khẩu</label>
                                         <input type="password" class="form-control"
                                             placeholder="Your password" name="password" id="email">
                                     </div>
@@ -85,14 +85,14 @@ if(isset($_SESSION['form_data'])) {
                             </div>
                             <div class="d-flex mb-5 mt-4 align-items-center">
                                 <div class="d-flex align-items-center">
-                                    <label class="control control--checkbox mb-0"><span class="caption">Remenber your passoword.</span>
+                                    <label class="control control--checkbox mb-0"><span class="caption">Ghi nhớ mật khẩu.</span>
                                         <input type="checkbox" checked="checked" />
                                         <div class="control__indicator"></div>
                                     </label>
                                 </div>
                             </div>
 
-                            <input type="submit" value="Login" class="btn px-5 btn-primary">
+                            <input type="submit" value="Đăng nhập" class="btn px-5 btn-primary">
                     </div>
 
 

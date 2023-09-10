@@ -17,7 +17,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>JobEntry - Job Portal Website Template</title>
+    <title>DATN-NGUYỄN VĂN TÙNG</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -64,12 +64,11 @@
         <!-- Header End -->
         <div class="container-xxl py-5 bg-dark page-header mb-5">
             <div class="container my-5 pt-5 pb-4">
-                <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
+                <h1 class="display-3 text-white mb-3 animated slideInDown">Giới thiệu</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb text-uppercase">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">About</li>
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Giới thiệu</li>
                     </ol>
                 </nav>
             </div>
@@ -98,12 +97,11 @@
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <h1 class="mb-4">We Help To Get The Best Job And Find A Talent</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Tempor erat elitr rebum at clita</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Aliqu diam amet diam et eos</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Clita duo justo magna dolore erat amet</p>
-                        <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+                        <h1 class="mb-4">Chúng tôi giúp bạn có được công việc tốt nhất và tìm kiếm nhân tài</h1>
+                        <p><i class="fa fa-check text-primary me-3"></i></p>
+                        <p><i class="fa fa-check text-primary me-3"></i></p>
+                        <p><i class="fa fa-check text-primary me-3"></i></p>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="">Xem thêm</a>
                     </div>
                 </div>
             </div>

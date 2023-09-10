@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 
 <head>
     <meta charset="utf-8">
-    <title>JobEntry - Job Portal Website Template</title>
+    <title>DATN-NGUYỄN VĂN TÙNG</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                             <div class="card">
                                 <div class="card-header">
 
-                                    <h5 class="card-title mb-0">Edit Your CV </h5>
+                                    <h5 class="card-title mb-0">Chỉnh sửa CV</h5>
                                 </div>
                                 <div class="card-body">
                                     <?php
@@ -111,10 +111,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                                                         <div class="mb-3">
                                                             <label class="form-label" for="inputUsername">Title</label>
                                                             <input type="text" name="title" class="form-control" value="<?= $result['cvTitle'] ?>"
-                                                                placeholder="Ex. Java Internal">
+                                                                placeholder="Ex. CV NGUYEN VAN TUNG">
                                                         </div>
                                                         <div class="mb-3">
-                                                            <label class="form-label" for="inputUsername">Upload CV</label> <br>
+                                                            <label class="form-label" for="inputUsername">Tệp</label> <br>
                                                             <a href='./uploads/<?= $result['cvFile'] ?>' target="_blank">Xem CV cũ</a>
                                                             <input type="file" name="fileCV" class="form-control"
                                                                 accept=".pdf,.docx">
@@ -122,7 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                                                     </div>
                                                 </div>
 
-                                                <button type="submit" name="submit" class="btn btn-primary">Save</button>
+                                                <button type="submit" name="submit" class="btn btn-primary">Lưu</button>
                                             </form>
                                         <?php }
                                     } ?>

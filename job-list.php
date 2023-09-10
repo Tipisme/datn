@@ -51,7 +51,7 @@ if(isset($_GET['salary'])){
 
 <head>
     <meta charset="utf-8">
-    <title>JobEntry - Job Portal Website Template</title>
+    <title>DATN-NGUYỄN VĂN TÙNG</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -120,12 +120,11 @@ if(isset($_GET['salary'])){
         <!-- Header End -->
         <div class="container-xxl py-5 bg-dark page-header mb-5">
             <div class="container my-5 pt-5 pb-4">
-                <h1 class="display-3 text-white mb-3 animated slideInDown">Job List</h1>
+                <h1 class="display-3 text-white mb-3 animated slideInDown">Danh sách công việc</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb text-uppercase">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">Job List</li>
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Công việc</li>
                     </ol>
                 </nav>
             </div>
@@ -145,7 +144,7 @@ if(isset($_GET['salary'])){
                                 }
                                 ?>" 
                                 
-                                placeholder="Keyword" />
+                                placeholder="Từ khóa" />
                             </div>
                             <div class="col-md-4">
                                 <input type="number" name="salary"
@@ -155,11 +154,11 @@ if(isset($_GET['salary'])){
                                     echo $_GET['salary'];
                                 }
                                 ?>" 
-                                class="form-control border-0" placeholder="Salary" />
+                                class="form-control border-0" placeholder="Mức lương" />
                             </div>
                             <div class="col-md-4">
                             <select name="category" class="form-select border-0">
-                                                    <option selected="" value="">Category</option>
+                                                    <option selected="" value="">Danh mục</option>
                                                     <?php
                                                     $cat = new Category();
                                                     $catList = $cat->showAllCategory();
@@ -167,12 +166,12 @@ if(isset($_GET['salary'])){
                                                     if ($catList) {
                                                         while ($result = $catList->fetch_assoc()) {
                                                             ?>
-                                                            <option <?php 
-                                                                                        
+                                                            <option <?php
+
                                                             if ($_GET['category'] == $result['catId']) {
                                                                 echo 'selected';
                                                             }
-                                                                                        
+
                                                             ?> value="<?php echo $result['catId'] ?>"><?php echo $result['catName'] ?></option>
                                                             <?php
                                                         }
@@ -183,7 +182,7 @@ if(isset($_GET['salary'])){
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <button type="submit" class="btn btn-dark border-0 w-100">Search</button>
+                        <button type="submit" class="btn btn-dark border-0 w-100">Tìm kiếm</button>
                     </div>
                 </div>
                 </form>
@@ -256,7 +255,7 @@ if(isset($_GET['salary'])){
                                                     <a class="btn btn-light btn-square me-3" href="?unfollow=<?= $item['id'] ?>"><i
                                                             class="fas fa-heart text-primary"></i></a>
                                                     <?php } ?>
-                                                    <a class="btn btn-primary" href="job-detail.php?jobId=<?= $item['id'] ?>">Apply Now</a>
+                                                    <a class="btn btn-primary" href="job-detail.php?jobId=<?= $item['id'] ?>">Ứng tuyển ngay</a>
                                                 </div>
                                                 <small class="text-truncate"><i
                                                         class="far fa-calendar-alt text-primary me-2"></i>Date Line: <?= $item['deadline'] ?></small>

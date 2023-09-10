@@ -11,7 +11,7 @@
                 </a>
 
                 <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
-                    <img src="../uploads/<?= Session::get('imageUrl') ?  Session::get('imageUrl') : "avatar-2.jpg" ?>" class="avatar img-fluid rounded me-1"
+                    <img src="../uploads/<?= Session::get('imageUrl') ?  Session::get('imageUrl') : "59b96b9734.png" ?>" class="avatar img-fluid rounded me-1"
                         alt="Charles Hall" /> <span class="text-dark">
                         <?php echo Session::get('name') ?>
                     </span>

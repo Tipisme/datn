@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 
 <head>
     <meta charset="utf-8">
-    <title>JobEntry - Job Portal Website Template</title>
+    <title>DATN-NGUYỄN VĂN TÙNG</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -130,17 +130,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                                 </div>
 
                                 <div class="mb-5">
-                                    <h4 class="mb-3">Job description</h4>
+                                    <h4 class="mb-3">Mô tả công việc</h4>
                                     <p><?= $job['description'] ?></p>
-                                    <h4 class="mb-3">Responsibility</h4>
+                                    <h4 class="mb-3">Yêu cầu</h4>
                                     <p><?= $job['require_job'] ?></p>
 
-                                    <h4 class="mb-3">Qualifications</h4>
+                                    <h4 class="mb-3">Chế độ & quyền lợi</h4>
                                     <p><?= $job['welfare'] ?></p>
                                 </div>
 
                                 <div class="mb-5">
-                                    <h4>Apply for this job</h4>
+                                    <h4>Ứng tuyển công việc này</h4>
                                     <?php
                                     if (isset($insert)) {
                                         echo $insert;
@@ -149,44 +149,44 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                                     <?php if(Session::get('login_customer')){ ?>
                                         <div class="row g-3">
                                             <div class="col-12">
-                                                <button class="btn btn-primary w-100" data-toggle="modal" data-target="#exampleModal" type="submit">Apply Now</button>
+                                                <button class="btn btn-primary w-100" data-toggle="modal" data-target="#exampleModal" type="submit">Ứng tuyển ngay</button>
                                             </div>
                                         </div>
 
                                     <?php } else { ?>
-                                        <div>Please log in to be able to apply</div>
+                                        <div>Vui lòng đăng nhập để có thể ứng tuyển</div>
                                     <?php } ?>
                                 </div>
 
                                 <div class="mb-5">
-                                    <h4>Comment</h4>
+                                    <h4>Bình luận</h4>
                                     <div class="fb-comments" data-href="http://127.0.0.1/topcv/job-detail.php?jobId=<?= $_GET['jobId']?>" data-width="100%" data-numposts="5"></div>
                                 </div>
                             </div>
 
                             <div class="col-lg-4">
                                 <div class="bg-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s">
-                                    <h4 class="mb-4">Job Summery</h4>
-                                    <p><i class="fa fa-angle-right text-primary me-2"></i>Vacancy: <?= $job['address'] ?></p>
-                                    <p><i class="fa fa-angle-right text-primary me-2"></i>Job Nature: <?= $job['time'] ?></p>
-                                    <p><i class="fa fa-angle-right text-primary me-2"></i>Salary: <?= number_format($job['min_salary']).'đ' ?> -
+                                    <h4 class="mb-4">Tóm tắt công việc</h4>
+                                    <p><i class="fa fa-angle-right text-primary me-2"></i>Vị trí: <?= $job['title'] ?></p>
+                                    <p><i class="fa fa-angle-right text-primary me-2"></i>Tính chất: <?= $job['time'] ?></p>
+                                    <p><i class="fa fa-angle-right text-primary me-2"></i>Lương: <?= number_format($job['min_salary']).'đ' ?> -
                                                             <?= number_format($job['max_salary']).'đ' ?></p>
-                                    <p><i class="fa fa-angle-right text-primary me-2"></i>Location: <?= $job['address'] ?></p>
-                                    <p class="m-0"><i class="fa fa-angle-right text-primary me-2"></i>Date Line: <?= $job['deadline'] ?>
+                                    <p><i class="fa fa-angle-right text-primary me-2"></i>Địa chỉ: <?= $job['address'] ?></p>
+                                    <p class="m-0"><i class="fa fa-angle-right text-primary me-2"></i>Hạn nộp: <?= $job['deadline'] ?>
                                     </p>
                                 </div>
                                 <div class="bg-light rounded p-5 wow slideInUp" data-wow-delay="0.1s">
-                                    <h4 class="mb-4">Company Detail</h4>
+                                    <h4 class="mb-4">Thông tin công ty</h4>
                                     <?php 
                                     $company = new Company();
                                     $companyList = $company->showCompanyById($job['companyId']);
                                     if ($companyList) {
                                                 while ($c = $companyList->fetch_assoc()) {
                                             ?>
-                                    <p><i class="fa fa-angle-right text-primary me-2"></i>Company Name: <?php echo $c['companyName'] ?></p>
-                                    <p><i class="fa fa-angle-right text-primary me-2"></i>Description: <?php echo $c['description'] ?></p>
+                                    <p><i class="fa fa-angle-right text-primary me-2"></i>Tên công ty: <?php echo $c['companyName'] ?></p>
+                                    <p><i class="fa fa-angle-right text-primary me-2"></i>Mô tả: <?php echo $c['description'] ?></p>
                                     <p><i class="fa fa-angle-right text-primary me-2"></i>Email: <?php echo $c['companyEmail'] ?></p>
-                                    <p><i class="fa fa-angle-right text-primary me-2"></i>Phone: <?php echo $c['companyPhone'] ?></p>
+                                    <p><i class="fa fa-angle-right text-primary me-2"></i>Số điện thoại: <?php echo $c['companyPhone'] ?></p>
                                     <?php
                                                 }
                                                     } 

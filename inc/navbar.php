@@ -7,17 +7,17 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="index.php" class="nav-item nav-link">Home</a>
-            <a href="job-list.php" class="nav-item nav-link">Jobs</a>
+            <a href="index.php" class="nav-item nav-link">Trang chủ</a>
+            <a href="job-list.php" class="nav-item nav-link">Việc làm</a>
 
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Trang</a>
                 <div class="dropdown-menu rounded-0 m-0">
-                    <a href="testimonial.php" class="dropdown-item">Advertisment</a>
+                    <a href="testimonial.php" class="dropdown-item">Quảng cáo</a>
                 </div>
             </div>
-            <a href="about.php" class="nav-item nav-link">About</a>
-            <a href="contact.php" class="nav-item nav-link">Contact</a>
+            <a href="about.php" class="nav-item nav-link">Giới thiệu</a>
+            <a href="contact.php" class="nav-item nav-link">Liên hệ</a>
             
         </div>
         <?php
@@ -52,9 +52,9 @@
                             <div>
                                 <div >
                                     <button type="button" class="btn btn-outline-dark btn-rounded btn-sm"
-                                        data-mdb-ripple-color="dark"><a href="profile.php">Profile</a></button>
+                                        data-mdb-ripple-color="dark"><a href="profile.php">Hồ sơ</a></button>
                                     <button type="button" class="btn btn-outline-dark btn-rounded btn-sm"
-                                        data-mdb-ripple-color="dark"><a href="?action=logout">Logout</a></button>
+                                        data-mdb-ripple-color="dark"><a href="?action=logout">Đăng xuất</a></button>
                                 </div>
                             </div>
                         </div>
@@ -62,10 +62,9 @@
             </span>
 
         <?php } else { ?>
-            <button type="button" class="btn btn-outline-success"><a href="login.php">Login</a></button>&nbsp;&nbsp;
-            <button type="button" class="btn btn-outline-success"><a href="signup.php">Sign up</a></button>&nbsp;&nbsp;
-            <button type="button" class="btn btn-success"><a href="recruiter/login.php" style="color: white;">Post a
-                    Job</a></button>&nbsp;&nbsp;
+            <button type="button" class="btn btn-outline-success"><a href="login.php">Đăng nhập</a></button>&nbsp;&nbsp;
+            <button type="button" class="btn btn-outline-success"><a href="signup.php">Đăng ký</a></button>&nbsp;&nbsp;
+            <button type="button" class="btn btn-success"><a href="recruiter/login.php" style="color: white;">Đăng tuyển</a></button>&nbsp;&nbsp;
         <?php } ?>
     </div>
 </nav>

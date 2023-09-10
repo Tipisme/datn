@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 
 <head>
     <meta charset="utf-8">
-    <title>JobEntry - Job Portal Website Template</title>
+    <title>DATN-NGUYỄN VĂN TÙNG</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                         <div class="tab-pane" id="password" role="tabpanel">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Password</h5>
+                                    <h5 class="card-title">Đổi mật khẩu</h5>
                                     <?php
                                     if (isset($insert)) {
                                         echo $insert;
@@ -93,25 +93,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                                     <form action="change-password.php" method="POST">
                                         <input type="hidden" name="userId" value="<?= Session::get('userId') ?>" />
                                         <div class="mb-3">
-                                            <label class="form-label" for="inputPasswordCurrent">Current
-                                                password</label>
+                                            <label class="form-label" for="inputPasswordCurrent">Mật khẩu hiện tại</label>
                                             <input type="password" name="oldPass" class="form-control"
                                                 id="inputPasswordCurrent" required>
                                         </div>
                                         <div class="mb-3">
-                                            <label class="form-label" for="inputPasswordNew">New
-                                                password</label>
+                                            <label class="form-label" for="inputPasswordNew">Mật khẩu mới</label>
                                             <input type="password" name="newPass" class="form-control"
                                                 id="inputPasswordNew" required>
                                         </div>
                                         <div class="mb-3">
-                                            <label class="form-label" for="inputPasswordNew2">Verify
-                                                password</label>
+                                            <label class="form-label" for="inputPasswordNew2">Xác nhận mật khẩu</label>
                                             <input type="password" name="confirmPass" class="form-control"
                                                 id="inputPasswordNew2" required>
                                         </div>
-                                        <button type="submit" name="submit" class="btn btn-primary">Save
-                                            changes</button>
+                                        <button type="submit" name="submit" class="btn btn-primary">Lưu thay đổi</button>
                                     </form>
 
                                 </div>

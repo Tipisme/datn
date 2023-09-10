@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 
 <head>
     <meta charset="utf-8">
-    <title>JobEntry - Job Portal Website Template</title>
+    <title>DATN-NGUYỄN VĂN TÙNG</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                             <div class="card">
                                 <div class="card-header">
 
-                                    <h5 class="card-title mb-0">Public info</h5>
+                                    <h5 class="card-title mb-0">Thông tin công khai</h5>
                                 </div>
                                 <div class="card-body">
                                     <?php
@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                                         <div class="row">
                                             <div class="col-md-8">
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="inputUsername">Name</label>
+                                                    <label class="form-label" for="inputUsername">Họ và Tên</label>
                                                     <input type="text" class="form-control"
                                                         value="<?= Session::get('name') ?>" id="inputUsername"
                                                         placeholder="Username" disabled>
@@ -110,13 +110,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
                                                         placeholder="Username" disabled>
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="inputAddress">Address</label>
+                                                    <label class="form-label" for="inputAddress">Địa chỉ</label>
                                                     <input type="text" class="form-control" id="inputAddress"
                                                         name="address" value="<?= Session::get('address') ?>"
                                                         placeholder="Ex. 1234 Main St">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label class="form-label" for="inputAddress2">Phone</label>
+                                                    <label class="form-label" for="inputAddress2">số điện thoại</label>
                                                     <input type="text" class="form-control" id="inputAddress2"
                                                         name="phone" value="<?= Session::get('phone') ?>"
                                                         placeholder="Ex. 0987654321">
@@ -145,19 +145,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
 
                                                     <div class="mt-2">
                                                         <label for="uploadInput" class="btn btn-primary">
-                                                            <i class="fas fa-upload"></i> Upload
+                                                            <i class="fas fa-upload"></i> Tải lên
                                                         </label>
                                                         <input type="file" name="uploadInput" id="uploadInput"
                                                             style="display: none;">
                                                     </div>
-                                                    <small>For best results, use an image at least 128px by
-                                                        128px in .jpg format</small>
+                                                    <small>Để có kết quả tốt nhất, hãy sử dụng hình ảnh có kích thước tối thiểu 128px
+                                                        128px ở định dạng .jpg</small>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <button type="submit" name="submit" class="btn btn-primary">Save
-                                            changes</button>
+                                        <button type="submit" name="submit" class="btn btn-primary">Lưu thay đổi</button>
                                     </form>
 
                                 </div>

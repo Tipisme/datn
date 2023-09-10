@@ -24,7 +24,7 @@ if (isset($_GET['delId'])) {
 
 <head>
     <meta charset="utf-8">
-    <title>JobEntry - Job Portal Website Template</title>
+    <title>DATN-NGUYỄN VĂN TÙNG</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -81,7 +81,7 @@ if (isset($_GET['delId'])) {
                             <div class="card">
                                 <div class="card-header">
 
-                                    <h5 class="card-title mb-0">Cv Management </h5>
+                                    <h5 class="card-title mb-0">Quản lý CV</h5>
                                 </div>
                                 <div class="card-body">
                                     <div id="datatables-multi_wrapper"
@@ -102,20 +102,20 @@ if (isset($_GET['delId'])) {
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-sort="ascending"
                                                                 aria-label="Name: activate to sort column descending">
-                                                                Serial No.</th>
+                                                                STT</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending">
-                                                                Title</th>
+                                                                Tiêu đề</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending" style="width: 200px">
-                                                                File CV</th>
+                                                                Tệp</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 style="width: 36px;"
                                                                 aria-label="Office: activate to sort column ascending" >
-                                                                Action</th>
+                                                                Hành động</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -135,7 +135,7 @@ if (isset($_GET['delId'])) {
                                                             <td><a href='./uploads/<?= $result['cvFile'] ?>' target="_blank">Xem CV</a></td>
                                                             <td class="table-action">
 												                <a href="edit-cv.php?cvId=<?= $result['cvId'] ?>"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 align-middle"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a>
-												                <a href="?delId=<?= $result['cvId'] ?>" onclick="return confirm('Are you want to delete?')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash align-middle"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a>
+												                <a href="?delId=<?= $result['cvId'] ?>" onclick="return confirm('Bạn có chắc chắn muốn xóa?')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash align-middle"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a>
 											                </td>
                                                         </tr>
                                                         <?php }} ?>

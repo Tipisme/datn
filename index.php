@@ -44,7 +44,7 @@ if (isset($_GET['unfollow'])) {
 
 <head>
     <meta charset="utf-8">
-    <title>JobEntry - Job Portal Website Template</title>
+    <title>DATN-NGUYỄN VĂN TÙNG</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -120,8 +120,7 @@ if (isset($_GET['unfollow'])) {
                                 <div class="col-10 col-lg-8">
                                     <h1 class="display-3 text-white animated slideInDown mb-4"><?php echo $b['bannerTitle'] ?></h1>
                                     <p class="fs-5 fdium text-whitw-mee mb-4 pb-2" style="color: whitesmoke;"><?php echo $b['bannerDescription'] ?></p>
-                                    <a href="job-list.php" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Search
-                                        A Job</a>
+                                    <a href="job-list.php" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Tìm kiếm công việc</a>
                                 </div>
                             </div>
                         </div>
@@ -143,14 +142,14 @@ if (isset($_GET['unfollow'])) {
                     <div class="col-md-10">
                         <div class="row g-2">
                             <div class="col-md-4">
-                                <input type="text" name="keyword" class="form-control border-0" placeholder="Keyword" />
+                                <input type="text" name="keyword" class="form-control border-0" placeholder="Từ khóa" />
                             </div>
                             <div class="col-md-4">
-                                <input type="number" name="salary" min="0" class="form-control border-0" placeholder="Salary" />
+                                <input type="number" name="salary" min="0" class="form-control border-0" placeholder="Mức lương" />
                             </div>
                             <div class="col-md-4">
                             <select name="category" class="form-select border-0">
-                                                    <option selected="" value="0">Category</option>
+                                                    <option selected="" value="0">Danh mục</option>
                                                     <?php
                                                     $cat = new Category();
                                                     $catList = $cat->showAllCategory();
@@ -168,7 +167,7 @@ if (isset($_GET['unfollow'])) {
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-dark border-0 w-100">Search</button>
+                        <button class="btn btn-dark border-0 w-100">Tìm kiếm</button>
                     </div>
                 </div>
             </form>
@@ -181,7 +180,7 @@ if (isset($_GET['unfollow'])) {
         <!-- Category Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Explore By Category</h1>
+                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Khám phá theo danh mục</h1>
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <a class="cat-item rounded p-4" href="job-list.php">
@@ -193,49 +192,49 @@ if (isset($_GET['unfollow'])) {
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                         <a class="cat-item rounded p-4" href="job-list.php">
                             <i class="fa fa-3x fa-headset text-primary mb-4"></i>
-                            <h6 class="mb-3">Customer Service</h6>
+                            <h6 class="mb-3">Dịch vụ</h6>
                          
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                         <a class="cat-item rounded p-4" href="job-list.php">
                             <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
-                            <h6 class="mb-3">Human Resource</h6>
+                            <h6 class="mb-3">Quản trị nhân lực</h6>
                             
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
                         <a class="cat-item rounded p-4" href="job-list.php">
                             <i class="fa fa-3x fa-tasks text-primary mb-4"></i>
-                            <h6 class="mb-3">Project Management</h6>
+                            <h6 class="mb-3">Quản lý dự án</h6>
                         
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <a class="cat-item rounded p-4" href="job-list.php">
                             <i class="fa fa-3x fa-chart-line text-primary mb-4"></i>
-                            <h6 class="mb-3">Business Development</h6>
+                            <h6 class="mb-3">Phát triển kinh doanh</h6>
                          
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                         <a class="cat-item rounded p-4" href="job-list.php">
                             <i class="fa fa-3x fa-hands-helping text-primary mb-4"></i>
-                            <h6 class="mb-3">Sales & Communication</h6>
+                            <h6 class="mb-3">Bán hàng và truyền thông</h6>
                           
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                         <a class="cat-item rounded p-4" href="job-list.php">
                             <i class="fa fa-3x fa-book-reader text-primary mb-4"></i>
-                            <h6 class="mb-3">Teaching & Education</h6>
+                            <h6 class="mb-3">Giảng dạy và giáo dục</h6>
                         
                         </a>
                     </div>
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
                         <a class="cat-item rounded p-4" href="job-list.php">
                             <i class="fa fa-3x fa-drafting-compass text-primary mb-4"></i>
-                            <h6 class="mb-3">Design & Creative</h6>
+                            <h6 class="mb-3">Thiết kế và sáng tạo</h6>
                        
                         </a>
                     </div>
@@ -266,14 +265,11 @@ if (isset($_GET['unfollow'])) {
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <h1 class="mb-4">We Help To Get The Best Job And Find A Talent</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
-                            diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna
-                            dolore erat amet</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Tempor erat elitr rebum at clita</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Aliqu diam amet diam et eos</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Clita duo justo magna dolore erat amet</p>
-                        <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+                        <h1 class="mb-4">Chúng tôi giúp bạn có được công việc tốt nhất và tìm kiếm nhân tài</h1>
+                        <p><i class="fa fa-check text-primary me-3"></i></p>
+                        <p><i class="fa fa-check text-primary me-3"></i></p>
+                        <p><i class="fa fa-check text-primary me-3"></i></p>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="">Xem Thêm</a>
                     </div>
                 </div>
             </div>
@@ -284,13 +280,13 @@ if (isset($_GET['unfollow'])) {
         <!-- Jobs Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Job Listing</h1>
+                <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Danh sách công việc</h1>
                 <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.3s">
                     <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
                         <li class="nav-item">
                             <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill"
                                 href="#tab-1">
-                                <h6 class="mt-n1 mb-0">Featured</h6>
+                                <h6 class="mt-n1 mb-0">Đặc sắc</h6>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -366,7 +362,7 @@ if (isset($_GET['unfollow'])) {
                                                     <a class="btn btn-light btn-square me-3" href="?unfollow=<?= $item['id'] ?>"><i
                                                             class="fas fa-heart text-primary"></i></a>
                                                     <?php } ?>
-                                                    <a class="btn btn-primary" href="job-detail.php?jobId=<?= $item['id'] ?>">Apply Now</a>
+                                                    <a class="btn btn-primary" href="job-detail.php?jobId=<?= $item['id'] ?>">Ứng tuyển ngay</a>
                                                 </div>
                                                 <small class="text-truncate"><i
                                                         class="far fa-calendar-alt text-primary me-2"></i>Date Line: <?= $item['deadline'] ?></small>
@@ -377,7 +373,7 @@ if (isset($_GET['unfollow'])) {
                                 }
                             }
                             ?>
-                            <a class="btn btn-primary py-3 px-5" href="job-list.php">Browse More Jobs</a>
+                            <a class="btn btn-primary py-3 px-5" href="job-list.php">Xem thêm công việc khác</a>
                         </div>
                         <div id="tab-2" class="tab-pane fade show p-0">
                         <?php
@@ -438,7 +434,7 @@ if (isset($_GET['unfollow'])) {
                                                     <a class="btn btn-light btn-square me-3" href="?unfollow=<?= $item['id'] ?>"><i
                                                             class="fas fa-heart text-primary"></i></a>
                                                     <?php } ?>
-                                                    <a class="btn btn-primary" href="job-detail.php?jobId=<?= $item['id'] ?>">Apply Now</a>
+                                                    <a class="btn btn-primary" href="job-detail.php?jobId=<?= $item['id'] ?>">Ứng tuyển ngay</a>
                                                 </div>
                                                 <small class="text-truncate"><i
                                                         class="far fa-calendar-alt text-primary me-2"></i>Date Line: <?= $item['deadline'] ?></small>
@@ -449,7 +445,7 @@ if (isset($_GET['unfollow'])) {
                                 }
                             }
                             ?>
-                            <a class="btn btn-primary py-3 px-5" href="job-list.php">Browse More Jobs</a>
+                            <a class="btn btn-primary py-3 px-5" href="job-list.php">Xem thêm công việc khác</a>
                         </div>
                         <div id="tab-3" class="tab-pane fade show p-0">
                         <?php
@@ -510,7 +506,7 @@ if (isset($_GET['unfollow'])) {
                                                     <a class="btn btn-light btn-square me-3" href="?unfollow=<?= $item['id'] ?>"><i
                                                             class="fas fa-heart text-primary"></i></a>
                                                     <?php } ?>
-                                                    <a class="btn btn-primary" href="job-detail.php?jobId=<?= $item['id'] ?>">Apply Now</a>
+                                                    <a class="btn btn-primary" href="job-detail.php?jobId=<?= $item['id'] ?>">Ứng tuyển ngay</a>
                                                 </div>
                                                 <small class="text-truncate"><i
                                                         class="far fa-calendar-alt text-primary me-2"></i>Date Line: <?= $item['deadline'] ?></small>
@@ -521,7 +517,7 @@ if (isset($_GET['unfollow'])) {
                                 }
                             }
                             ?>
-                            <a class="btn btn-primary py-3 px-5" href="job-list.php">Browse More Jobs</a>
+                            <a class="btn btn-primary py-3 px-5" href="job-list.php">Xem thêm công việc khác</a>
                         </div>
                     </div>
                 </div>
@@ -533,7 +529,7 @@ if (isset($_GET['unfollow'])) {
         <!-- Testimonial Start -->
         <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container">
-                <h1 class="text-center mb-5">Advertisment 🎈✨</h1>
+                <h1 class="text-center mb-5">Quảng cáo 🎈✨</h1>
                 <div class="owl-carousel testimonial-carousel">
                     <?php
                     $showAdv = $class->showAllAdvertisment();

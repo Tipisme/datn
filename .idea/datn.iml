@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/firebase/php-jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/google/apiclient" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/google/apiclient-services" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/google/auth" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/paragonie/constant_time_encoding" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/phpseclib/phpseclib" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/google-login/vendor/symfony/deprecation-contracts" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

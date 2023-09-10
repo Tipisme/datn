@@ -116,7 +116,7 @@ if (isset($accessToken)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
+    <title>Đăng nhập</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -134,12 +134,11 @@ if (isset($accessToken)) {
                 <div class="signin-content">
                     <div class="signin-image">
                         <figure><img src="img/signin-image.jpg" alt="sing up image"></figure>
-                        <a href="signup.php" class="signup-image-link">Create an account</a>
+                        <a href="signup.php" class="signup-image-link">Tạo tài khoản</a>
                     </div>
 
                     <div class="signin-form">
-                        <h2 class="form-title">Login with <a href="index.php" style="text-decoration: none; ">
-                                JobPortal
+                        <h2 class="form-title">Đăng nhập <a href="index.php" style="text-decoration: none; ">
                             </a></h2>
                         <?php
                         if (isset($login_check)) {
@@ -149,24 +148,23 @@ if (isset($accessToken)) {
                         <form method="POST" action="login.php" class="register-form" id="login-form">
                             <div class="form-group">
                                 <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="email" name="email" id="your_name" placeholder="Your Email"
+                                <input type="email" name="email" id="your_name" placeholder="Email"
                                     value="<?php echo isset($form_data['email']) ? $form_data['email'] : ''; ?>" />
                             </div>
                             <div class="form-group">
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="password" id="your_pass" placeholder="Password" />
+                                <input type="password" name="password" id="your_pass" placeholder="Mật khẩu" />
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
-                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember
-                                    me</label>
+                                <label for="remember-me" class="label-agree-term"><span><span></span></span>Ghi nhớ tài khoản</label>
                             </div>
                             <div class="form-group form-button">
-                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Đăng nhập" />
                             </div>
                         </form>
                         <div class="social-login">
-                            <span class="social-label">Or login with</span>
+                            <span class="social-label">Hoặc đăng nhập với</span>
                             <ul class="socials">
                                 <li><a href="<?= $loginUrl ?>"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
                                 <li><a href="<?= $google_client->createAuthUrl() ?>"><i

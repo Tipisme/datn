@@ -40,7 +40,7 @@ if (isset($_GET['action']) && $_GET['action'] == "logout") {
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-    <title>AdminKit Demo - Bootstrap 5 Admin Template</title>
+    <title>Admin</title>
 
     <link href="./asset/css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -57,7 +57,7 @@ if (isset($_GET['action']) && $_GET['action'] == "logout") {
             <main class="content">
                 <div class="container-fluid p-0">
 
-                    <h1 class="h3 mb-3">Category</h1>
+                    <h1 class="h3 mb-3">Danh mục</h1>
 
                     <div class="row">
                         <div class="col-12">
@@ -65,8 +65,8 @@ if (isset($_GET['action']) && $_GET['action'] == "logout") {
                             </div>
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="card-title">Category Management</h5>
-                                    <h6 class="card-subtitle text-muted">Show all category in system.
+                                    <h5 class="card-title">Quản lý danh mục</h5>
+                                    <h6 class="card-subtitle text-muted">Hiển thị tất cả danh mục trong hệ thống.
                                 </div>
                                 <div class="card-body">
                                     <div id="datatables-multi_wrapper"
@@ -87,17 +87,17 @@ if (isset($_GET['action']) && $_GET['action'] == "logout") {
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 style="width: 224px;" aria-sort="ascending"
                                                                 aria-label="Name: activate to sort column descending">
-                                                                Serial No.</th>
+                                                                STT</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 style="width: 334px;"
                                                                 aria-label="Position: activate to sort column ascending">
-                                                                Category Name</th>
+                                                                Tên danh mục</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 style="width: 36px;"
                                                                 aria-label="Office: activate to sort column ascending" >
-                                                                Action</th>
+                                                                Hành động</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>

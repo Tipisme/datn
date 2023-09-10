@@ -36,7 +36,7 @@ if (isset($_GET['action']) && $_GET['action'] == "logout") {
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-    <title>AdminKit Demo - Bootstrap 5 Admin Template</title>
+    <title>Admin</title>
 
     <link href="./asset/css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -52,13 +52,13 @@ if (isset($_GET['action']) && $_GET['action'] == "logout") {
             <main class="content">
                 <div class="container-fluid p-0">
 
-                    <h1 class="h3 mb-3">Category</h1>
+                    <h1 class="h3 mb-3">Danh mục</h1>
 
                     <div class="row">
                         <div class="card">
                             <div class="card-header">
-                                <h5 class="card-title">Add Category</h5>
-                                <h6 class="card-subtitle text-muted">Add new category in system.</h6>
+                                <h5 class="card-title">Thêm danh mục</h5>
+                                <h6 class="card-subtitle text-muted">Thêm một danh mục mới vào hệ thống.</h6>
                             </div>
                             <div class="card-body">
                                 <?php 
@@ -69,11 +69,11 @@ if (isset($_GET['action']) && $_GET['action'] == "logout") {
                                 <form method="POST" action="addcategory.php">
 
                                     <div class="mb-3">
-                                        <label class="form-label">Category Name</label>
-                                        <input type="text" class="form-control" name="catName" placeholder="Category Name">
+                                        <label class="form-label">Tên danh mục</label>
+                                        <input type="text" class="form-control" name="catName" placeholder="Tên danh mục">
                                     </div>
                             
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="btn btn-primary">Gửi</button>
                                 </form>
                             </div>
                         </div>

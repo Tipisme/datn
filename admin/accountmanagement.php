@@ -42,7 +42,7 @@ if (isset($_GET['open'])) {
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
 
-    <title>AdminKit Demo - Bootstrap 5 Admin Template</title>
+    <title>Admin</title>
 
     <link href="./asset/css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -59,7 +59,7 @@ if (isset($_GET['open'])) {
             <main class="content">
                 <div class="container-fluid p-0">
 
-                    <h1 class="h3 mb-3">Advertisement</h1>
+                    <h1 class="h3 mb-3">Tài khoản</h1>
 
                     <div class="row">
                         <div class="col-12">
@@ -67,8 +67,8 @@ if (isset($_GET['open'])) {
                             </div>
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="card-title">Advertisement Management</h5>
-                                    <h6 class="card-subtitle text-muted">Show all advertisement in system.
+                                    <h5 class="card-title">Quản lý tài khoản</h5>
+                                    <h6 class="card-subtitle text-muted">Hiển thị tất cả tài khoản.
                                 </div>
                                 <div class="card-body">
                                     <div id="datatables-multi_wrapper"
@@ -89,11 +89,11 @@ if (isset($_GET['open'])) {
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-sort="ascending"
                                                                 aria-label="Name: activate to sort column descending">
-                                                                Serial No.</th>
+                                                                STT</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending">
-                                                                Account</th>
+                                                                Họ và Tên</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending">
@@ -101,15 +101,15 @@ if (isset($_GET['open'])) {
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending">
-                                                                Phone</th>
+                                                                SĐT</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending">
-                                                                Authority</th>
+                                                                Quyền</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending">
-                                                                Lock Account</th>
+                                                                Khóa tài khoản</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -152,12 +152,12 @@ if (isset($_GET['open'])) {
                                                                                 class="btn btn-outline-danger"><a
                                                                                 href="?open=<?php echo $result['userId'] ?>"
                                                                                 onclick="return confirm('Are you want to open this account?')"
-                                                                                style="text-decoration: none; color: red;">Locked</a></button>
+                                                                                style="text-decoration: none; color: red;">Đã khóa</a></button>
                                                                         <?php } else { ?>
                                                                             <button type="button" class="btn btn-outline-danger"><a
                                                                                 href="?lock=<?php echo $result['userId'] ?>"
                                                                                 onclick="return confirm('Are you want to lock this account?')"
-                                                                                style="text-decoration: none; color: red;">Lock</a></button>
+                                                                                style="text-decoration: none; color: red;">Khóa</a></button>
                                                                         <?php } ?>
                                                                     </td>
                                                                 </tr>

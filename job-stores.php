@@ -23,7 +23,7 @@ $class = new JobStores();
 
 <head>
     <meta charset="utf-8">
-    <title>JobEntry - Job Portal Website Template</title>
+    <title>DATN-NGUYỄN VĂN TÙNG</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -80,7 +80,7 @@ $class = new JobStores();
                             <div class="card">
                                 <div class="card-header">
 
-                                    <h5 class="card-title mb-0">Job Stores</h5>
+                                    <h5 class="card-title mb-0">Cửa hàng việc làm</h5>
                                 </div>
                                 <div class="card-body">
                                     <div id="datatables-multi_wrapper"
@@ -101,23 +101,23 @@ $class = new JobStores();
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-sort="ascending"
                                                                 aria-label="Name: activate to sort column descending">
-                                                                Serial No.</th>
+                                                                STT</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending">
-                                                                Job Title</th>
+                                                                Tiêu đề công việc</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending" style="width: 200px">
-                                                                Address</th>
+                                                                Địa chỉ</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending" style="width: 200px">
-                                                                Level</th>
+                                                                Cấp độ</th>
                                                             <th class="sorting" tabindex="0"
                                                                 aria-controls="datatables-multi" rowspan="1" colspan="1"
                                                                 aria-label="Position: activate to sort column ascending" style="width: 200px">
-                                                                Salary</th>
+                                                                Lương</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>

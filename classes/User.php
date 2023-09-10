@@ -116,7 +116,8 @@ class User
         $unique_image = substr(md5(time()), 0, 10) . '.' . $file_ext;
         $uploaded_image = "./uploads/" . $unique_image;
         if(empty($address) || empty($phone)){
-            return;
+            $alert = "<span style='color: red;'>Vui lòng điền địa chỉ và số điện thoại</span>";
+            return $alert;
         }
         if (!empty($file_name)) {
             if ($file_size > (1024 * 1024)) {
@@ -139,10 +140,10 @@ class User
         Session::set('phone',$address);
 
         if ($result) {
-            $alert = "<span style='color: green;'>Upload Info Successfully</span>";
+            $alert = "<span style='color: green;'>Cập phật thông tin thành công</span>";
             return $alert;
         } else {
-            $alert = "<span style='color: red;'>Upload Info Not Successfully</span>";
+            $alert = "<span style='color: red;'>Cập phật thông tin không thành công</span>";
             return $alert;
         }
     }
