@@ -105,7 +105,7 @@ if (isset($accessToken)) {
     }
 } else {
     // replace  website URL same as added in the developers.Facebook.com/apps e.g. if you used http instead of https and used            
-    $loginUrl = $helper->getLoginUrl('http://localhost/topcv/login.php', $permissions);
+    $loginUrl = $helper->getLoginUrl('https://datn.io.vn/login.php', $permissions);
 }
 
 ?>
