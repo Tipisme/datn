@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th9 09, 2023 lúc 05:30 AM
+-- Thời gian đã tạo: Th9 23, 2023 lúc 06:36 PM
 -- Phiên bản máy phục vụ: 10.4.28-MariaDB
 -- Phiên bản PHP: 8.0.28
 
@@ -41,7 +41,7 @@ CREATE TABLE `tbl_admin` (
 --
 
 INSERT INTO `tbl_admin` (`adminId`, `adminName`, `adminEmail`, `adminPass`, `adminUser`, `level`) VALUES
-(1, 'Nam Nghiem', 'master@gmail.com', '25d55ad283aa400af464c76d713c07ad', 'master', 0);
+(2, 'Nguyễn Văn Tùng', 'tung.nv182875@sis.hust.edu.vn', '6b840a4d9c722a9dd5442980134148af', 'master', 0);
 
 -- --------------------------------------------------------
 
@@ -62,10 +62,10 @@ CREATE TABLE `tbl_advertisement` (
 --
 
 INSERT INTO `tbl_advertisement` (`id`, `title`, `description`, `image`, `adminId`) VALUES
-(4, 'Shopping for Fpt Shop 1', 'Recruiter for all company 1', '23968a2b7f.png', 1),
-(5, 'Mobiphone', 'All day all time', '3518b58d81.jpg', 1),
-(6, 'Viettel', 'Java Developer', 'f958c1fb0f.jpg', 1),
-(7, 'Shoppe', 'Sale and Marketting', '1461105d7b.jpg', 1);
+(4, 'Shopping for Fpt Shop 1', 'Recruiter for all company 1', '23968a2b7f.png', 2),
+(5, 'Mobiphone', 'All day all time', '3518b58d81.jpg', 2),
+(6, 'Viettel', 'Java Developer', 'f958c1fb0f.jpg', 2),
+(7, 'Shoppe', 'Sale and Marketting', '1461105d7b.jpg', 2);
 
 -- --------------------------------------------------------
 
@@ -86,8 +86,8 @@ CREATE TABLE `tbl_banner` (
 --
 
 INSERT INTO `tbl_banner` (`bannerId`, `bannerImage`, `bannerDescription`, `adminId`, `bannerTitle`) VALUES
-(1, '2b780a40bd.png', 'Crafting a compelling job description is essential to helping you attract the most qualified candidates for your job. With more than 25 million jobs listed on Indeed', 1, 'Find The Perfect Job That You Desrved'),
-(3, '59fe877b70.jpg', 'It is a very effective solution to better understand yourself and others to build strong working relationships.', 1, 'Rocket Start - Express CV Writing 2');
+(1, '2b780a40bd.png', 'Việc tạo ra một bản mô tả công việc hấp dẫn là điều cần thiết để giúp bạn thu hút những ứng viên đủ tiêu chuẩn nhất cho công việc của mình. Với hơn 25 triệu việc làm được liệt kê trên Indeed', 1, 'Tìm công việc hoàn hảo mà bạn mong muốn'),
+(3, '59fe877b70.jpg', 'Đó là một giải pháp rất hiệu quả để hiểu rõ hơn về bản thân và người khác nhằm xây dựng các mối quan hệ công việc bền chặt.', 1, 'Tạo CV');
 
 -- --------------------------------------------------------
 
@@ -131,8 +131,8 @@ CREATE TABLE `tbl_company` (
 --
 
 INSERT INTO `tbl_company` (`companyId`, `companyName`, `description`, `image`, `companyPhone`, `companyEmail`, `userId`) VALUES
-(1, 'Mobiphone Company', 'Vì một tương lai phát triển của giới trẻ việt nam', '23968a2b7f.png', '0987654321', 'mobiphone@software.com', 4),
-(2, 'Asus Company', 'Vì một tương lai phát triển của giới trẻ việt nam', '5ca5dbf503.jpg', '0987789987', 'asus.contact@gmail.com', 4);
+(1, 'Mobiphone Company', 'Vì một tương lai phát triển của giới trẻ việt nam', '23968a2b7f.png', '0987654321', 'mobiphone@software.com', 8),
+(2, 'Asus Company', 'Vì một tương lai phát triển của giới trẻ việt nam', '5ca5dbf503.jpg', '0987789987', 'asus.contact@gmail.com', 8);
 
 -- --------------------------------------------------------
 
@@ -155,7 +155,9 @@ CREATE TABLE `tbl_cv` (
 INSERT INTO `tbl_cv` (`cvId`, `cvTitle`, `cvFile`, `userId`, `isEnable`) VALUES
 (2, 'Java Senior', '997e6d46a3.pdf', 1, b'1'),
 (3, 'Junior Java Developer', 'b00879615e.pdf', 1, b'0'),
-(4, 'Java Internal', '550551f689.pdf', 5, b'0');
+(4, 'Java Internal', '550551f689.pdf', 5, b'0'),
+(5, 'CV Nguyen Van Tung', '7521e112fa.pdf', 8, b'0'),
+(6, 'CV Tung', '7d9e83796b.pdf', 9, b'0');
 
 -- --------------------------------------------------------
 
@@ -241,7 +243,8 @@ CREATE TABLE `tbl_recruitment` (
 
 INSERT INTO `tbl_recruitment` (`id`, `cvId`, `jobId`, `createdAt`, `userId`) VALUES
 (3, 2, 5, '2023-09-03', 1),
-(4, 4, 5, '2023-09-05', 5);
+(4, 4, 5, '2023-09-05', 5),
+(7, 5, 2, '2023-09-09', 8);
 
 -- --------------------------------------------------------
 
@@ -270,12 +273,9 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`userId`, `name`, `email`, `phone`, `address`, `position`, `provider`, `provider_id`, `imageUrl`, `password`, `adminId`, `level`, `is_locked`) VALUES
-(1, 'Nam Nghiêm', 'gasky2k1@gmail.com', '0972265535', 'Yen Nghia', '', '', '', '9922601376.jpg', '25f9e794323b453885f5181f1b624d0b', 1, b'0', b'0'),
-(3, 'Hồ Văn Ngọc', 'namsky2k1@gmail.com', '', '', '', '', '', '23968a2b7f.png', '25d55ad283aa400af464c76d713c07ad', 1, b'0', b'0'),
-(4, 'Son Nguyen Dinh', 'sonsky2k1@gmail.com', '0972265535', 'Yen Nghia - Ha Dong', 'HR', '', '', '4578e32a17.jpg', '25f9e794323b453885f5181f1b624d0b', 1, b'1', b'0'),
-(5, 'Nam Gà', 'namsky1826@gmail.com', '0397507826', 'Phùng Khoang, Trung Văn', '', '', '', '31cda79700.png', '25d55ad283aa400af464c76d713c07ad', 1, b'0', b'0'),
-(6, 'Offical Anime', 'animeoffical2k1@gmail.com', '', '', '', '', '', 'https://lh3.googleusercontent.com/a/ACg8ocI1JXqIkv8deBBXSylElJi9jApgnWf6LEDsLsU79enFyg=s96-c', '', 0, b'0', b'0'),
-(7, 'Nam Nghiêm', 'dinhnamsaker@gmail.com', '', '', '', '', '', 'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=1808048596296570&height=200&ext=1696792523&hash=AeQxLP7B941T0q5ecDg', '', 0, b'0', b'0');
+(8, 'Nguyễn Văn', 'qua1223qua@gmail.com', '', '', 'HR', '', '', 'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=1781879188950121&height=200&ext=1696823715&hash=AeQp9A__DO5DiTtEzg4', '', 1, b'1', b'0'),
+(9, 'Nguyễn Văn Tùng', 'tung.nv182875@sis.hust.edu.vn', '0123456789', '113.190.42.12', '', '', '', '59e496c9de.png', '6b840a4d9c722a9dd5442980134148af', 2, b'0', b'0'),
+(10, 'Nguyễn Văn Tùng', 'tung.nv0621@gmail.com', '0886647098', '113.190.42.12', 'HR', '', '', '', '6b840a4d9c722a9dd5442980134148af', 1, b'1', b'0');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -349,7 +349,7 @@ ALTER TABLE `tbl_user`
 -- AUTO_INCREMENT cho bảng `tbl_admin`
 --
 ALTER TABLE `tbl_admin`
-  MODIFY `adminId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `adminId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_advertisement`
@@ -379,7 +379,7 @@ ALTER TABLE `tbl_company`
 -- AUTO_INCREMENT cho bảng `tbl_cv`
 --
 ALTER TABLE `tbl_cv`
-  MODIFY `cvId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `cvId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_job`
@@ -397,13 +397,13 @@ ALTER TABLE `tbl_jobstores`
 -- AUTO_INCREMENT cho bảng `tbl_recruitment`
 --
 ALTER TABLE `tbl_recruitment`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT cho bảng `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
