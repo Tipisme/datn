@@ -56,9 +56,9 @@ if (isset($_GET["code"])) {
 <?php
 //initialize facebook sdk
 $fb = new Facebook\Facebook([
-    'app_id' => '827368992220575',
+    'app_id' => '853879869280674',
     // your app id
-    'app_secret' => '986dbcad3f9bc01dd42d917f96d62675',
+    'app_secret' => 'bf3b03a3d98b50dcbfc373be12de4e61',
     // your app secret
     'default_graph_version' => 'v2.5',
 ]);
