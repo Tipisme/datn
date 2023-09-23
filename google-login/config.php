@@ -9,10 +9,10 @@ require_once 'vendor/autoload.php';
 $google_client = new Google_Client();
 
 //Set the OAuth 2.0 Client ID
-$google_client->setClientId('529302459286-f2fhubc46s3kvuaj4bg2gl0srhf3fkba.apps.googleusercontent.com');
+$google_client->setClientId('324127999156-49ll21kn41n2jqig3p446q4jsk5049jq.apps.googleusercontent.com');
 
 //Set the OAuth 2.0 Client Secret key
-$google_client->setClientSecret('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');
+$google_client->setClientSecret('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');
 
 //Set the OAuth 2.0 Redirect URI
 $google_client->setRedirectUri('https://datn.io.vn/login.php');
