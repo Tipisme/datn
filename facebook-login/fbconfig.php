@@ -15,7 +15,7 @@
    use Facebook\HttpClients\FacebookHttpable;
    
    // init app with app id and secret
-   FacebookSession::setDefaultApplication( '496544657159182','e6d239655aeb3e496e52fabeaf1b1f93' );
+   FacebookSession::setDefaultApplication( '853879869280674','bf3b03a3d98b50dcbfc373be12de4e61' );
    
    // login helper with redirect_uri
    $helper = new FacebookRedirectLoginHelper('http://www.tutorialspoint.com/' );

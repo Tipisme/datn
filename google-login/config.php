@@ -15,7 +15,7 @@ $google_client->setClientId('529302459286-f2fhubc46s3kvuaj4bg2gl0srhf3fkba.apps.
 $google_client->setClientSecret('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');
 
 //Set the OAuth 2.0 Redirect URI
-$google_client->setRedirectUri('http://localhost/topcv/login.php');
+$google_client->setRedirectUri('https://datn.io.vn/login.php');
 
 // to get the email and profile 
 $google_client->addScope('email');
